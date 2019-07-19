@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
-  /*fr is fraction, try to change some value
-  to see how gird items are affected, in
+  /*fr is for fraction, try to change some value
+  to see how grid items are affected, in
   this case we have three fractions with value=1
   this means: the whole row contains three fractions,
   each fraction takes 1/3 of the row height*/
