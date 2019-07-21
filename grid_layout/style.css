@@ -39,3 +39,12 @@ header, footer, main, nav, div {
 .ads {
 	grid-area: ads;
 }
+
+.burger, .no-burger {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.burger {
+	display: none;
+}
