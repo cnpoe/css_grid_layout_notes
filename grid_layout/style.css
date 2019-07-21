@@ -20,20 +20,24 @@ header, footer, main, nav, div {
 .header {
 	grid-area: header;
 	grid-column-start: col-main;
+	transition: all 0.5s;
 }
 
 .footer {
 	grid-area: footer;
 	grid-column-start: col-main;
+	transition: all 0.5s;
 }
 
 .nav {
 	grid-area: nav;
+	transition: all 0.5s;
 }
 
 .main {
 	grid-area: main;
 	overflow-y: scroll;
+	transition: all 0.5s;
 }
 
 .ads {
@@ -47,4 +51,13 @@ header, footer, main, nav, div {
 
 .burger {
 	display: none;
+}
+
+.animate .nav {
+	width: 30px;
+}
+
+.animate .header, .animate .main, .animate .footer {
+	width: calc(100% + 180px);
+	transform: translateX(-220px);
 }
