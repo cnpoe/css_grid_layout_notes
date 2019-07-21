@@ -5,8 +5,9 @@ body {
 		"nav main ads"
 		"nav footer footer";
 	grid-template-rows: 60px 1fr 60px;
-	grid-auto-columns: 300px 2fr 1fr;
-	grid-gap: 10px;
+	grid-template-columns: 290px [col-main] 2fr 1fr;
+	grid-row-gap: 1px;
+	grid-column-gap: 1px;
 	height: 100vh;
 	margin: 0;
 }
@@ -18,14 +19,12 @@ header, footer, main, nav, div {
 
 .header {
 	grid-area: header;
-	grid-column-start: 2;
-	top: 0;
+	grid-column-start: col-main;
 }
 
 .footer {
 	grid-area: footer;
-	grid-column-start: 2;
-	bottom: 0;
+	grid-column-start: col-main;
 }
 
 .nav {
