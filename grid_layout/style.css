@@ -1,13 +1,14 @@
 body {
 	display: grid;
 	grid-template-areas:
-		"header header header"
+		"nav header header"
 		"nav main ads"
-		"footer footer footer";
+		"nav footer footer";
 	grid-template-rows: 60px 1fr 60px;
-	grid-auto-columns: 20% 1fr 15%;
+	grid-auto-columns: 300px 2fr 1fr;
 	grid-gap: 10px;
 	height: 100vh;
+	margin: 0;
 }
 
 header, footer, main, nav, div {
@@ -17,10 +18,14 @@ header, footer, main, nav, div {
 
 .header {
 	grid-area: header;
+	grid-column-start: 2;
+	top: 0;
 }
 
 .footer {
 	grid-area: footer;
+	grid-column-start: 2;
+	bottom: 0;
 }
 
 .nav {
@@ -29,6 +34,7 @@ header, footer, main, nav, div {
 
 .main {
 	grid-area: main;
+	overflow-y: scroll;
 }
 
 .ads {
